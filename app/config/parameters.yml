@@ -6,7 +6,7 @@ parameters:
     database_driver:   pdo_mysql
     database_host:     WAPVPLMSQL22A02.sql.mdcloud.cat
     database_port:     3306
-    database_name:     mysqlcupon
+    database_name:     mysqlsymfonydefinitivo
     database_user:     dbroot
     database_password: Med1apro?
                
