@@ -1,0 +1,21 @@
+# This file is auto-generated during the composer install
+parameters:
+
+    
+    # Si usas MySQL, descomenta estas líneas
+    database_driver:   pdo_mysql
+    database_host:     WAPVPLMSQL22A02.sql.mdcloud.cat
+    database_port:     3306
+    database_name:     mysqlcupon
+    database_user:     dbroot
+    database_password: Med1apro?
+               
+
+    mailer_transport:  smtp
+    mailer_host:       localhost
+    mailer_user:       ~
+    mailer_password:   ~
+    
+    
+    locale: es
+    secret: ThisTokenIsNotSoSecretChangeIt

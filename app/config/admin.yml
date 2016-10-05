@@ -1,0 +1,7 @@
+easy_admin:
+    entities:
+        - AppBundle\Entity\Ciudad
+        - AppBundle\Entity\Oferta
+        - AppBundle\Entity\Venta
+        - AppBundle\Entity\Tienda
+        - AppBundle\Entity\Usuario

@@ -1,0 +1,31 @@
+{% extends 'frontend.html.twig' %}
+
+{% block id 'recientes' %}
+{% block title %}Ofertas recientes en {{ ciudad.nombre }}{% endblock %}
+
+{% block rss %}
+    <link rel="alternate" type="application/rss+xml" title="RSS de las ofertas más recientes en {{ ciudad.nombre }}" href="{{ url('ciudad_recientes', { ciudad: ciudad.slug, _format: 'rss' }) }}" />
+{% endblock %}
+
+{% block article %}
+    <h1>{{ "Ofertas recientes en %ciudad%"|trans({ '%ciudad%': ciudad.nombre }) }}</h1>
+
+    {% for oferta in ofertas %}
+        {{ include('oferta/_oferta_simple.html.twig') }}
+    {% endfor %}
+{% endblock %}
+
+{% block aside %}
+    {{ parent() }}
+
+    <section id="cercanas">
+        <h2>{{ "Ofertas en otras ciudades"|trans }}</h2>
+        <ul>
+            {% for ciudad in cercanas %}
+                <li><a href="{{ path('ciudad_recientes', { ciudad: ciudad.slug }) }}">{{ ciudad.nombre }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    {{ include('comun/_sobre_nosotros.html.twig') }}
+{% endblock %}
