@@ -40,13 +40,13 @@ doctrine:
         driver:   '%database_driver%'
         charset:  UTF8
         # Si NO usas SQLite, comenta esta línea
-        path:     '%database_path%'
+        #path:     '%database_path%'
         # Si usas MySQL, descomenta estas líneas
-        # host:     '%database_host%'
-        # port:     '%database_port%'
-        # dbname:   '%database_name%'
-        # user:     '%database_user%'
-        # password: '%database_password%'
+        host:     '%database_host%'
+        port:     '%database_port%'
+        dbname:   '%database_name%'
+        user:     '%database_user%'
+        password: '%database_password%'
 
     orm:
         auto_generate_proxy_classes: '%kernel.debug%'
