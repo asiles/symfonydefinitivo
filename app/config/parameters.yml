@@ -4,7 +4,7 @@ parameters:
     
     # Si usas MySQL, descomenta estas líneas
     database_driver:   pdo_mysql
-    database_host:     172.30.177.50
+    database_host:     172.30.106.4
     database_port:     3306
     database_name:     mysqlsymfonydefinitivo
     database_user:     dbroot
